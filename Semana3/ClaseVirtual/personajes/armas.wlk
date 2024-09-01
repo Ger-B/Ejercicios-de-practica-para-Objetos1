@@ -9,6 +9,11 @@ object ballesta {
     method estaCargada(){
         return flechas > 0
     }
+    method recarga() {
+        if(flechas == 0){
+            flechas = 10 
+        }
+    }
 }
 
 object jabalina {
@@ -21,5 +26,10 @@ object jabalina {
     }
     method estaCargada() {
         return estaCargada
+    }
+    method recarga() {
+        if (not estaCargada){
+            estaCargada = true
+        }
     }
 }

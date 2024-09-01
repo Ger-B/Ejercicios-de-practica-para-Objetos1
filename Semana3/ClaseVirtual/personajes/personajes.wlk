@@ -15,6 +15,9 @@ object floki {
     method arma(unArma) {   //setter
         arma = unArma
     }
+    method recargar() {
+        arma.recarga()
+    }
 }
 
 object mario {
