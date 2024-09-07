@@ -1,0 +1,18 @@
+import feroz.*
+import caperucita.*
+
+describe "Verificar la historia para Lobo Feroz" {
+    test "Feroz corre una vez, su peso queda en 9" {
+        feroz.corre()
+        assert.equals(10-1, feroz.peso())
+    }
+    //Muestra de que cada test corre de forma individual desde las condiciones iniciales.
+    test "Feroz corre dos veces, su peso queda en 8" {  
+        feroz.corre()
+        feroz.corre()
+        assert.equals(10-1-1, feroz.peso())
+    }
+
+
+
+}
